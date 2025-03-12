@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopping Cart - Fresh Mart</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+</head>
+<body class="main-layout inner_page">
+    <!-- header -->
+    <header>
+        <div class="header-top">
+            <div class="header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-4 col-md-4 col-sm-3 col logo_section">
+                            <div class="full">
+                                <div class="center-desk">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="images/logo.jpg" alt="Fresh Mart Logo" class="img-fluid logo-img" style="max-width: 150px;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-8 col-md-8 col-sm-9">
+                            <div class="menu-area">
+                                <div class="limit-box">
+                                    <nav class="main-menu">
+                                        <ul class="menu-area-main">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="login.html">Login</a></li>
+                                            <li><a href="register.html">Register</a></li>
+                                            <li class="active"><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>Shopping <strong class="llow">Cart</strong></h2>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cart Items -->
+            <div class="row">
+                <div class="col-md-8">
+                    <!-- Vegetables Section -->
+                    <div class="cart-section mb-4">
+                        <h3 class="section-title">Vegetables</h3>
+                        <div class="cart-items" id="vegetablesCart">
+                            <!-- Cart items will be dynamically added here -->
+                        </div>
+                    </div>
+
+                    <!-- Fruits Section -->
+                    <div class="cart-section">
+                        <h3 class="section-title">Fruits</h3>
+                        <div class="cart-items" id="fruitsCart">
+                            <!-- Cart items will be dynamically added here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="col-md-4">
+                    <div class="cart-summary">
+                        <h3>Order Summary</h3>
+                        <div class="summary-item">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">₹0.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Delivery:</span>
+                            <span id="delivery">₹40.00</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total:</span>
+                            <span id="total">₹0.00</span>
+                        </div>
+                        <button class="checkout-btn">Proceed to Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright 2024 All Right Reserved By Fresh Mart</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html> 
